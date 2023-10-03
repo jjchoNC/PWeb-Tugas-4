@@ -11,32 +11,32 @@ function createCard(title, temperature, humidity, windSpeed, windDirection, weat
         logo = "https://www.bmkg.go.id/asset/img/weather_icon/ID/cerah%20berawan-am.png"
     }
     return `
-            <div class="col-3 col-md-4 mb-3">
-                <div class="shadow h-100 py-2">
-                    <div class="card-body">
-                        <div class="row no-gutters align-items-center text-left">
-                            <div class="col">
-                                <div class="font-weight-bold text-primary mb-2 h4">Kota Surabaya</div>
-                                <div class="h6 mb-2 font-weight-Fbold text-gray-800">
-                                    <b>Waktu</b> : ${date.toLocaleDateString('id-ID', options)}
-                                </div>
-                                <div class="h6 mb-2 font-weight-Fbold text-gray-800">
-                                    <b>Temperatur</b> : ${temperature}&deg;C<br>
-                                </div>
-                                <div class="h6 mb-2 font-weight-Fbold text-gray-800">
-                                    <b>Kelembapan</b> : ${humidity}%
-                                </div>
-                                <div class="h6 mb-2 font-weight-Fbold text-gray-800">
-                                    <b>Angin</b> : ${windSpeed} kph (${windDirection}&deg)
-                                </div>
-                            </div>
-                            <div class="col-auto text-right">
-                                <img src=${logo} alt="Placeholder Image" class="img-fluid" style="width: 75%;">
+    <div class="col-12 col-sm-4 col-md-3 mb-3">
+        <div class="shadow h-100 py-2">
+            <div class="card-body">
+                <div class="row no-gutters align-items-center text-left">
+                    <div class="col">
+                        <div class="font-weight-bold text-primary mb-2 h4">Kota Surabaya</div>
+                        <div class="h6 mb-2 font-weight-Fbold text-gray-800">
+                            <b>Waktu</b> : ${date.toLocaleDateString('id-ID', options)}
                         </div>
+                        <div class="h6 mb-2 font-weight-Fbold text-gray-800">
+                            <b>Temperatur</b> : ${temperature}&deg;C<br>
+                        </div>
+                        <div class="h6 mb-2 font-weight-Fbold text-gray-800">
+                            <b>Kelembapan</b> : ${humidity}%
+                        </div>
+                        <div class="h6 mb-2 font-weight-Fbold text-gray-800">
+                            <b>Angin</b> : ${windSpeed} kph (${windDirection}&deg)
                         </div>
                     </div>
+                    <div class="col-auto text-right">
+                        <img src=${logo} alt="Placeholder Image" class="img-fluid" style="width: 75%;">
+                </div>
                 </div>
             </div>
+        </div>
+    </div>
 `
 }
 
