@@ -6,3 +6,5 @@
 ### Tugas : Belajar menggunakan AJAX
 
 ![dashboard](img/preview.png)
+
+Sumber data : https://data.bmkg.go.id/DataMKG/MEWS/DigitalForecast/DigitalForecast-JawaTimur.xml
